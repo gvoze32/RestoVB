@@ -23,6 +23,7 @@
 
     Private Sub FormKategori_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RefreshGrid()
+        txtIDKategori.Enabled = False
     End Sub
 
     Private Sub RefreshGrid()

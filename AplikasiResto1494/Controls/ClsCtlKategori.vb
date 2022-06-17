@@ -57,7 +57,7 @@ Public Class ClsCtlKategori : Implements InfProses
         Dim baru As String
         Dim kodeakhir As Integer
         Try
-            DTA = New OdbcDataAdapter("select max (right(id_kategori,3)) from kategori", BUKAKONEKSI)
+            DTA = New OdbcDataAdapter("select max(right(id_kategori,3)) from kategori", BUKAKONEKSI)
             DTS = New DataSet()
             DTA.Fill(DTS, "max_kode")
             kodeakhir = Val(DTS.Tables("max_kode").Rows(0).Item(0))
@@ -72,7 +72,7 @@ Public Class ClsCtlKategori : Implements InfProses
         Dim cek As Boolean
         cek = False
         Try
-            DTA = New OdbcDataAdapter("Select count(id_Kategori) from Kategori " & " where id_Kategori = '" & kunci & "'", BUKAKONEKSI)
+            DTA = New OdbcDataAdapter("Select count(id_kategori) from Kategori " & " where id_kategori = '" & kunci & "'", BUKAKONEKSI)
             DTS = New DataSet
             DTA.Fill(DTS, "cek")
             If DTS.Tables("cek").Rows(0)(0).ToString > 0 Then
