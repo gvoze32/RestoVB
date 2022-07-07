@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormPenjualan
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormPenjualan
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -41,7 +41,6 @@ Partial Class FormPenjualan
         Me.Label16 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.btnHitung = New System.Windows.Forms.Button()
         Me.btnHapus = New System.Windows.Forms.Button()
         Me.btnSimpan = New System.Windows.Forms.Button()
         Me.btnTambah = New System.Windows.Forms.Button()
@@ -209,7 +208,6 @@ Partial Class FormPenjualan
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label14)
-        Me.GroupBox1.Controls.Add(Me.btnHitung)
         Me.GroupBox1.Controls.Add(Me.btnHapus)
         Me.GroupBox1.Controls.Add(Me.btnSimpan)
         Me.GroupBox1.Controls.Add(Me.btnTambah)
@@ -242,15 +240,6 @@ Partial Class FormPenjualan
         Me.Label14.Size = New System.Drawing.Size(12, 20)
         Me.Label14.TabIndex = 34
         Me.Label14.Text = ":"
-        '
-        'btnHitung
-        '
-        Me.btnHitung.Location = New System.Drawing.Point(245, 363)
-        Me.btnHitung.Name = "btnHitung"
-        Me.btnHitung.Size = New System.Drawing.Size(94, 29)
-        Me.btnHitung.TabIndex = 33
-        Me.btnHitung.Text = "Hitung"
-        Me.btnHitung.UseVisualStyleBackColor = True
         '
         'btnHapus
         '
@@ -453,5 +442,4 @@ Partial Class FormPenjualan
     Friend WithEvents Label8 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label14 As Label
-    Friend WithEvents btnHitung As Button
 End Class

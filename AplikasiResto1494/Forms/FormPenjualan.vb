@@ -63,6 +63,10 @@
     End Sub
 
     Sub Bersih()
+        LVPenjualan.Items.Clear()
+        lblTotal.Text = "0"
+        txtBayar.Text = "0"
+        txtKembali.Text = "0"
     End Sub
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
@@ -117,18 +121,5 @@
         Next
         KontrolPenjualan.SIMPAN_DATA(EntitasPenjualan, lsdetail)
         Bersih()
-    End Sub
-
-    Private Sub btnHitung_Click(sender As Object, e As EventArgs) Handles btnHitung.Click
-        Dim total = CInt(lblTotal.Text)
-        Dim bayar = CInt(txtBayar.Text)
-        Dim kembalian As Integer
-
-        If bayar < total Then
-            MsgBox("Pembayaran Kurang")
-        Else
-            kembalian = bayar - total
-            txtKembali.Text = kembalian
-        End If
     End Sub
 End Class
