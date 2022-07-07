@@ -220,6 +220,7 @@ Partial Class FormMenu
         Me.Controls.Add(Me.btnUbah)
         Me.Controls.Add(Me.btnTambah)
         Me.Name = "FormMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form Menu"
         CType(Me.DGMenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

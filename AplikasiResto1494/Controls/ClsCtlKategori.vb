@@ -33,6 +33,7 @@ Public Class ClsCtlKategori : Implements InfProses
     Public Function tampilData() As DataView Implements InfProses.tampilData
         Try
             DTA = New OdbcDataAdapter("select * from kategori", BUKAKONEKSI)
+            DTS = New DataSet
             DTA.Fill(DTS, "Tabel_Kategori")
             Dim grid As New DataView(DTS.Tables("Tabel_Kategori"))
             Return grid
@@ -72,7 +73,7 @@ Public Class ClsCtlKategori : Implements InfProses
         Dim cek As Boolean
         cek = False
         Try
-            DTA = New OdbcDataAdapter("Select count(id_kategori) from Kategori " & " where id_kategori = '" & kunci & "'", BUKAKONEKSI)
+            DTA = New OdbcDataAdapter("Select count(id_kategori) from Menu " & " where id_kategori = '" & kunci & "'", BUKAKONEKSI)
             DTS = New DataSet
             DTA.Fill(DTS, "cek")
             If DTS.Tables("cek").Rows(0)(0).ToString > 0 Then

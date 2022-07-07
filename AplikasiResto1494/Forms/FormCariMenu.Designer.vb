@@ -61,6 +61,7 @@ Partial Class FormCariMenu
         Me.Controls.Add(Me.LVCariMenu)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FormCariMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form Cari Menu"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

@@ -231,6 +231,7 @@ Partial Class FormKasir
         Me.Controls.Add(Me.btnUbah)
         Me.Controls.Add(Me.btnTambah)
         Me.Name = "FormKasir"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form Kasir"
         CType(Me.DGKasir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

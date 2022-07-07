@@ -83,6 +83,7 @@ Partial Class FormLogin
         '
         Me.txtPassword.Location = New System.Drawing.Point(342, 270)
         Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(199, 27)
         Me.txtPassword.TabIndex = 5
         '
@@ -104,7 +105,7 @@ Partial Class FormLogin
         Me.btnKeluar.Text = "Keluar"
         Me.btnKeluar.UseVisualStyleBackColor = True
         '
-        'Form1
+        'FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -116,7 +117,8 @@ Partial Class FormLogin
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel1)
-        Me.Name = "Form1"
+        Me.Name = "FormLogin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form Login"
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
