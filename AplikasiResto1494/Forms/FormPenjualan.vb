@@ -100,6 +100,7 @@
             Exit Sub
         End If
         With EntitasPenjualan
+            .IdJual = lblIDJual.Text
             .Total = lblTotal.Text
             .TglJual = Format(Now, "dd/MM/yyyy")
             .IdKasir = lblIDKasir.Text
@@ -108,6 +109,7 @@
 
             EntitasDetailJual = New ClsEntDetailJual
             With LVPenjualan.Items(i)
+                EntitasDetailJual.IdJual = lblIDJual.Text
                 EntitasDetailJual.IdMenu = .SubItems(0).Text
                 EntitasDetailJual.HargaJual = .SubItems(2).Text
                 EntitasDetailJual.Qty = .SubItems(3).Text
